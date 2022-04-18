@@ -28,6 +28,7 @@ public class EmpController {
   }
 
   @PostMapping("/emp")
+  //@RequestBody: JSON.parse()
   public Boolean add (@RequestBody Emp emp) {
     System.out.println(emp);
     return empService.add(emp);

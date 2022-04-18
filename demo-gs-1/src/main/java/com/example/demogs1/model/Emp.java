@@ -6,6 +6,17 @@ public class Emp {
   private Double salary;
   private Boolean isPermanent;
 
+  @Override
+  public String toString() {
+    //boolean value add "is" automatically
+    return "Emp{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", salary=" + salary +
+            ", isPermanent=" + isPermanent +
+            '}';
+  }
+
   public Emp(Long id, String name, Double salary, Boolean isPermanent) {
     this.id = id;
     this.name = name;
